@@ -1805,7 +1805,7 @@ points in wireless LAN. The module provides SPI ports to interface with a host c
 <connect gate="G$1" pin="D-" pad="2"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="ID" pad="4"/>
-<connect gate="G$1" pin="SHIELD" pad="6 7 8 9" route="any"/>
+<connect gate="G$1" pin="SHIELD" pad="6 7 8 9"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>

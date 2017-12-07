@@ -1489,8 +1489,8 @@ to remotely locate the antenna.</description>
 <symbol name="BAT">
 <text x="-11.43" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-11.43" y="2.794" size="1.778" layer="95">&gt;NAME</text>
-<pin name="VBAT-1" x="0" y="-3.81" visible="pad" length="point" direction="pas" rot="R90"/>
-<pin name="VBAT+1" x="0" y="2.54" visible="pad" length="point" direction="pas" rot="R270"/>
+<pin name="VBAT-" x="0" y="-3.81" visible="pad" length="point" direction="pas" rot="R90"/>
+<pin name="VBAT+" x="0" y="2.54" visible="pad" length="point" direction="pas" rot="R270"/>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -1805,7 +1805,7 @@ points in wireless LAN. The module provides SPI ports to interface with a host c
 <connect gate="G$1" pin="D-" pad="2"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="ID" pad="4"/>
-<connect gate="G$1" pin="SHIELD" pad="6 7 8 9" route="any"/>
+<connect gate="G$1" pin="SHIELD" pad="6 7 8 9"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
@@ -2249,19 +2249,19 @@ points in wireless LAN. The module provides SPI ports to interface with a host c
 <gate name="G$1" symbol="BAT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="HOL2" package="HOLDER_2">
+<device name="HOL_1" package="HOLDER_1">
 <connects>
-<connect gate="G$1" pin="VBAT+1" pad="1 4"/>
-<connect gate="G$1" pin="VBAT-1" pad="2 3"/>
+<connect gate="G$1" pin="VBAT+" pad="2"/>
+<connect gate="G$1" pin="VBAT-" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="HOL1" package="HOLDER_1">
+<device name="HOL2" package="HOLDER_2">
 <connects>
-<connect gate="G$1" pin="VBAT+1" pad="1"/>
-<connect gate="G$1" pin="VBAT-1" pad="2"/>
+<connect gate="G$1" pin="VBAT+" pad="1 4"/>
+<connect gate="G$1" pin="VBAT-" pad="2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
