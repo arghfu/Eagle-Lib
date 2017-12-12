@@ -1497,8 +1497,6 @@ to remotely locate the antenna.</description>
 <wire x1="0" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-3.81" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<pin name="VBAT-2" x="7.62" y="-3.81" visible="pad" length="point" direction="pas" rot="R90"/>
-<pin name="VBAT+2" x="7.62" y="2.54" visible="pad" length="point" direction="pas" rot="R270"/>
 </symbol>
 <symbol name="CON-2X10">
 <wire x1="4.445" y1="11.43" x2="-1.905" y2="11.43" width="0.254" layer="94"/>
@@ -2252,6 +2250,19 @@ points in wireless LAN. The module provides SPI ports to interface with a host c
 </gates>
 <devices>
 <device name="HOL2" package="HOLDER_2">
+<connects>
+<connect gate="G$1" pin="VBAT+1" pad="1 4"/>
+<connect gate="G$1" pin="VBAT-1" pad="2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HOL1" package="HOLDER_1">
+<connects>
+<connect gate="G$1" pin="VBAT+1" pad="1"/>
+<connect gate="G$1" pin="VBAT-1" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
